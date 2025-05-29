@@ -1,0 +1,565 @@
+.dashboard-container {
+  display: flex;
+  height: auto;
+  width: 95vw;
+  margin: 20px auto;
+  background: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+  
+  .sidebar {
+    width: 200px;
+    background: #f8f9ff;
+    padding: 2px;
+    border-right: 2px solid #eee;
+    text-align: left;
+  }
+  
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left; 
+  padding-bottom: 0%;
+}
+
+
+  
+  .sidebar nav h4 {
+    margin-bottom: 10px;
+    color: #999;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding-bottom: 5px;
+  }
+  
+  .sidebar li {
+    margin: 25px 0;
+    cursor: pointer;
+    padding-bottom: 5px;
+  }
+  
+
+
+
+  
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background: #f9fbff;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 8px 12px;
+    width: 300px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+
+
+
+
+
+  .search-bar-with-bell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bell-icon {
+  color: #3b82f6;
+  cursor: pointer;
+}
+
+
+
+  
+  .header-actions {
+    display: flex;
+    gap: 0px;
+    align-items: center;
+  }
+  
+  .avatar {
+    width: 32px;
+    border-radius: 50%;
+    
+  }
+  
+  .dashboard-main {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  
+  .overview-section {
+    flex: 1;
+    background: white;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  
+  .body-img {
+    width: 110%;
+    max-width: 350px;
+    padding-right: 20%;
+    position: static;
+  }
+  
+  .indicator {
+    margin-top: 10px;
+    font-size: 10px;
+    padding: 2px 1px; 
+    
+
+  }
+  
+  .heart {
+    background: #eee0ff;
+    color: #a600ff;
+    
+  }
+  
+  .leg {
+    background: #e0f7ff;
+    color: #007799;
+  }
+  
+  .health-cards {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  
+  .card {
+  background: #f0f2fa;
+  padding: 2px;
+  border-radius: 1px;
+  width: 100px;
+  padding-left: 5px;
+  text-align: center;
+}
+
+
+.health-status-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 12px;
+  width: 150px;
+  background: #f0f2fa;
+}
+
+
+
+
+
+
+
+ .anatomy-cards-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 20px;
+  
+}
+
+.health-cards-column {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 2px;
+}
+
+
+.health-status-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 12px;
+  width: 150px;
+  background: #f0f2fa;
+  padding-bottom: 10px;
+}
+
+.icon-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.health-icon {
+  width: 32px;
+  height:32px;
+  
+}
+
+.health-name {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: left;
+}
+
+
+
+.health-name1{
+  font-weight: 500;
+  font-size: 16px;
+  text-align: left;
+
+}
+
+.health-date {
+  font-size: 13px;
+  color: #555;
+  text-align: center;
+  width: 100%;
+  height: fit-content;
+}
+
+.bar-track {
+  width: 50%;
+  height: 8px;;
+  background: #d7d8d8;
+  border-radius: 2px;
+  overflow: hidden;
+  
+  }
+
+.bar-fill {
+  height: 100%;
+  width: 80%; /* Fixed fill width */
+  border-radius: 8px;
+}
+
+.bar-fill.red {
+  background-color: #f87171;
+}
+
+.bar-fill.green {
+  background-color: #3fe1f7;
+}
+
+  
+ 
+.appointments {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.appointment-card {
+  background: #3d4fdb;
+  border-radius: 16px;
+  padding: 5px;
+  color: white;
+  flex: 1;
+  height: 80px;
+  max-width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: space-between;
+}
+
+.appointment-card.tall {
+  min-height: 80px;
+  max-width: 300%;
+  background-color: rgb(231, 244, 248);
+  color: #3d4fdb;
+  border-radius: 10px;
+  
+}
+
+.appointment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  font-size: 16px;
+}
+
+.appointment-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.appointment-time,
+.appointment-doctor {
+  font-size: 12px;
+  margin: 0;
+  text-align: left;
+  white-space-collapse: nowrap;
+}
+  
+  
+  
+  
+  
+
+
+
+
+
+.upcoming-schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 24px;
+  font-weight: 500;
+  color: rgb(2, 2, 219);
+}
+
+.day-schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
+}
+
+.schedule-day-label {
+  font-weight: 600;
+  color: #363636;
+  font-size: 16px;
+}
+
+.schedule-items {
+  display: flex;
+  gap: 12px;
+  max-width: 200px;
+  width: 100%;
+}
+
+.schedule-pill {
+  background: #e8ebfb;
+  padding: 12px 16px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pill-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  color: #2d2f7f;
+  font-size: 14px;
+  text-align: left;
+}
+
+.pill-time {
+  font-size: 12px;
+  color: #555;
+  margin-top: 4px;
+}
+
+/* Width settings */
+.pill-wide {
+  flex: 2;
+  min-width: 200px;
+}
+
+.pill-narrow {
+  flex: 1;
+  width: 250px;
+  max-width: 500px;
+}
+
+
+
+
+
+
+.activity {
+  background: #f8faff;
+  padding: 20px;
+  border-radius: 16px;
+  margin-top: 20px;
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.activity-header h4 {
+  font-weight: 600;
+  color: #2d2f7f;
+}
+
+.activity-header p {
+  font-size: 14px;
+  color: #666;
+}
+
+.activity-chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 140px;
+  margin-top: 10px;
+}
+
+.activity-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px; /* enough to contain 3 bars side-by-side */
+}
+
+.bar-group {
+  display: flex;
+  gap: 2px;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.bar-segment {
+  width: 6px;
+  border-radius: 4px;
+  margin: 1px;
+  transition: height 0.3s ease;
+}
+
+
+.bar-segment.gray {
+  background-color: #d1d5db;
+}
+
+.bar-segment.sky {
+  background-color: #22d3ee;
+}
+
+.bar-segment.purple {
+  background-color: #6366f1;
+}
+
+.day-label {
+  font-size: 12px;
+  color: #777;
+  margin-top: 4px;
+
+  text-align: center;
+}
+
+
+
+.calendar-day-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.nav-btn{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+
+
+
+
+
+
+
+
+
+.calendar-section {
+  flex: 1.2;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.calendar-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d2f7f;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #2d2f7f;
+  cursor: pointer;
+}
+
+.calendar-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.calendar-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.calendar-day-header {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.calendar-day-name {
+  font-size: 12px;
+  color: #888;
+}
+
+.calendar-day-date {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2d2f7f;
+}
+
+.calendar-times {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.calendar-time {
+  padding: 6px 10px;
+  background: #f4f4f8;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #333;
+  text-align: center;
+}
+
+.calendar-time.active {
+  background: #4339f2;
+  color: white;
+}
+
